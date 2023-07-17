@@ -1,10 +1,10 @@
 {
-    'name': "E-School",
+    'name': "eSchool",
     'version': '16.0.1.0.0',
     'category': 'Human Resources/School',
 
     'summary': """
-        E-School school electronic document management
+        School management
         """,
 
     'author': "Svyatoslav Nadozirny",
