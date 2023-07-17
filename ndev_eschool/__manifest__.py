@@ -29,7 +29,7 @@
     'demo': [
         'demo/subjects_data.xml',
     ],
-    'images': ['static/description/banner.jpg'],
+    'images': ['static/description/banner.png'],
     'application': True,
     'installable': True,
     'auto_install': True,
