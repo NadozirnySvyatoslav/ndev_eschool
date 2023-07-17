@@ -1,0 +1,38 @@
+<odoo>
+    <record id="eschool_schedule_form_view" model="ir.ui.view">
+        <field name="name">schedule form</field>
+        <field name="model">eschool.schedule</field>
+        <field name="arch" type="xml">
+            <form string="schedule action">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="day"/>
+                            <field name="lesson_id"/>
+                            <field name="class_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="eschool_schedule_tree_view" model="ir.ui.view">
+        <field name="name">schedules</field>
+        <field name="model">eschool.schedule</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="day"/>
+                <field name="lesson_id"/>
+                <field name="class_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="eschool_schedule_action" model="ir.actions.act_window">
+        <field name="name">schedule</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">eschool.schedule</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

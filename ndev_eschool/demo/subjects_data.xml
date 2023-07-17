@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="lesson_math" model="eschool.subject">
+        <field name="name">Математика</field>
+    </record>
+    <record id="lesson_english" model="eschool.subject">
+        <field name="name">Англійська мова</field>
+    </record>
+    <record id="lesson_science" model="eschool.subject">
+        <field name="name">Природознавство</field>
+    </record>
+    <record id="subject_history" model="eschool.subject">
+        <field name="name">Історія</field>
+    </record>
+    <record id="subject_geography" model="eschool.subject">
+        <field name="name">Географія</field>
+    </record>
+    <record id="subject_ukrainian" model="eschool.subject">
+        <field name="name">Українська мова</field>
+    </record>
+    <record id="subject_physics" model="eschool.subject">
+        <field name="name">Фізика</field>
+    </record>
+    <record id="subject_chemistry" model="eschool.subject">
+        <field name="name">Хімія</field>
+    </record>
+    <record id="subject_biology" model="eschool.subject">
+        <field name="name">Біологія</field>
+    </record>
+    <record id="subject_art" model="eschool.subject">
+        <field name="name">Образотворче Мистецтво</field>
+    </record>
+    <record id="subject_music" model="eschool.subject">
+        <field name="name">Музика</field>
+    </record>
+    <record id="subject_physical_education" model="eschool.subject">
+        <field name="name">Фізична культура</field>
+    </record>
+</odoo>

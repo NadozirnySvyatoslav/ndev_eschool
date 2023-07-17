@@ -1,0 +1,38 @@
+<odoo>
+    <record id="eschool_journal_form_view" model="ir.ui.view">
+        <field name="name">journal form</field>
+        <field name="model">eschool.journal</field>
+        <field name="arch" type="xml">
+            <form string="journal action">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="date"/>
+                            <field name="lesson_id"/>
+                            <field name="pupil_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="eschool_journal_tree_view" model="ir.ui.view">
+        <field name="name">journals</field>
+        <field name="model">eschool.journal</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="date"/>
+                <field name="lesson_id"/>
+                <field name="pupil_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="eschool_journal_action" model="ir.actions.act_window">
+        <field name="name">journal</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">eschool.journal</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

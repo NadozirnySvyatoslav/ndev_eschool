@@ -1,0 +1,43 @@
+<odoo>
+    <record id="eschool_teacher_form_view" model="ir.ui.view">
+        <field name="name">teacher form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="before">
+                <label for="is_teacher">
+                    Is teacher
+                </label>
+                <field name="is_teacher"/>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Subjects" >
+                    <field name="subject_ids" >
+                        <tree editable="bottom">
+                            <field name="name"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="eschool_teacher_tree_view" model="ir.ui.view">
+        <field name="name">teachers</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after" domain="[('is_teacher','=',True)]">
+                <field name="name"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="eschool_teacher_action" model="ir.actions.act_window">
+        <field name="name">teacher</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('is_teacher','=',True)]</field>
+    </record>
+</odoo>

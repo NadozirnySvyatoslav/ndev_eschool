@@ -1,0 +1,35 @@
+<odoo>
+    <record id="eschool_parent_form_view" model="ir.ui.view">
+        <field name="name">parent form</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <form string="parent action">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="eschool_parent_tree_view" model="ir.ui.view">
+        <field name="name">parents</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="eschool_parent_action" model="ir.actions.act_window">
+        <field name="name">parent</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('is_parent','=',True)]</field>
+    </record>
+</odoo>

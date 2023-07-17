@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Top menu item -->
+    <menuitem name="E-School" id="eschool_menu_root"/>
+    <!-- menu categories -->
+    <menuitem name="E-School" id="eschool_eschool_menu" parent="eschool_menu_root"/>
+    <menuitem name="Settings" id="eschool_settings_menu" parent="eschool_menu_root"/>
+    <!-- actions -->
+    <menuitem name="Journal" id="eschool_journal" parent="eschool_eschool_menu"
+              action="eschool_journal_action"/>
+
+    <menuitem name="Schedule" id="eschool_schedule" parent="eschool_eschool_menu"
+              action="eschool_schedule_action"/>
+
+
+    <menuitem name="Subjects" id="eschool_subject" parent="eschool_settings_menu"
+              action="eschool_subject_action"/>
+
+    <menuitem name="Teachers" id="eschool_teacher" parent="eschool_settings_menu"
+              action="eschool_teacher_action"/>
+
+    <menuitem name="Pupils" id="eschool_pupil" parent="eschool_settings_menu"
+              action="eschool_pupil_action"/>
+
+    <menuitem name="Parents" id="eschool_parent" parent="eschool_settings_menu"
+              action="eschool_parent_action"/>
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+
+    <record model="ir.module.category" id="ndev_eschool.module_category_school">
+        <field name="description">Helps you handle your e-school needs</field>
+        <field name="sequence">7</field>
+        <field name="name">E-school</field>
+    </record>
+
+    <record id="group_school_manager" model="res.groups">
+        <field name="name">E-school Administrator</field>
+        <field name="category_id" ref="ndev_eschool.module_category_school"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+
+    <record id="group_school_teacher" model="res.groups">
+        <field name="name">E-school Teacher</field>
+        <field name="category_id" ref="ndev_eschool.module_category_school"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+
+    <record id="group_school_pupil" model="res.groups">
+        <field name="name">E-school Pupil</field>
+        <field name="category_id" ref="ndev_eschool.module_category_school"/>
+    </record>
+
+    <record id="group_school_parent" model="res.groups">
+        <field name="name">E-school Parent</field>
+        <field name="category_id" ref="ndev_eschool.module_category_school"/>
+    </record>
+
+</odoo>
