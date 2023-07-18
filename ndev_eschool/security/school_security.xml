@@ -28,5 +28,4 @@
         <field name="name">E-school Parent</field>
         <field name="category_id" ref="ndev_eschool.module_category_school"/>
     </record>
-
 </odoo>

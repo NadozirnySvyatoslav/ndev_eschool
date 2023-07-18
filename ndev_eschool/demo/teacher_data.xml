@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="teacher_1" model="hr.employee">
+        <field name="name">Романович Олена Віталіївна</field>
+        <field name="gender">female</field>
+        <field name="is_teacher">True</field>
+        <field name="subject_ids" eval="[(6,0,[ref('subject_physical_education')])]"/>
+    </record>
+
+    <record id="teacher_2" model="hr.employee">
+        <field name="name">Клименко Євгенія Сергіївна</field>
+        <field name="gender">female</field>
+        <field name="is_teacher">True</field>
+        <field name="subject_ids" eval="[(6,0,[ref('subject_music')])]"/>
+    </record>
+
+    <record id="teacher_3" model="hr.employee">
+        <field name="name">Мазур Наталія Віталіївна</field>
+        <field name="gender">female</field>
+        <field name="is_teacher">True</field>
+        <field name="subject_ids" eval="[(6,0,[ref('subject_art')])]"/>
+    </record>
+
+    <record id="teacher_4" model="hr.employee">
+        <field name="name">Семенченко Марина Сергіївна</field>
+        <field name="gender">male</field>
+        <field name="is_teacher">True</field>
+        <field name="subject_ids" eval="[(6,0,[ref('subject_biology')])]"/>
+    </record>
+
+    <record id="teacher_5" model="hr.employee">
+        <field name="name">Тарасенко Євгенія Михайлівна</field>
+        <field name="gender">male</field>
+        <field name="is_teacher">True</field>
+        <field name="subject_ids" eval="[(6,0,[ref('subject_chemistry')])]"/>
+    </record>
+
+    <record id="teacher_6" model="hr.employee">
+        <field name="name">Семенюк Юлія Василівна</field>
+        <field name="gender">female</field>
+        <field name="is_teacher">True</field>
+        <field name="subject_ids" eval="[(6,0,[ref('subject_physics')])]"/>
+    </record>
+
+    <record id="teacher_7" model="hr.employee">
+        <field name="name">Сідорчук Марія Олександрівна</field>
+        <field name="gender">female</field>
+        <field name="is_teacher">True</field>
+        <field name="subject_ids" eval="[(6,0,[ref('subject_ukrainian')])]"/>
+    </record>
+
+    <record id="teacher_8" model="hr.employee">
+        <field name="name">Савчук Альона Артемівна</field>
+        <field name="gender">female</field>
+        <field name="is_teacher">True</field>
+        <field name="subject_ids" eval="[(6,0,[ref('subject_geography')])]"/>
+    </record>
+
+    <record id="teacher_9" model="hr.employee">
+        <field name="name">Пономаренко Євгенія Іванівна</field>
+        <field name="gender">female</field>
+        <field name="is_teacher">True</field>
+        <field name="subject_ids" eval="[(6,0,[ref('subject_history')])]"/>
+    </record>
+
+    <record id="teacher_10" model="hr.employee">
+        <field name="name">Семенюк Анастасія Віталіївна</field>
+        <field name="gender">male</field>
+        <field name="is_teacher">True</field>
+        <field name="subject_ids" eval="[(6,0,[ref('lesson_science')])]"/>
+    </record>
+
+    <record id="teacher_11" model="hr.employee">
+        <field name="name">Головко Ганна Іллівна</field>
+        <field name="gender">female</field>
+        <field name="is_teacher">True</field>
+        <field name="subject_ids" eval="[(6,0,[ref('lesson_english')])]"/>
+    </record>
+
+    <record id="teacher_12" model="hr.employee">
+        <field name="name">Сердюк Альона Богданівна</field>
+        <field name="gender">male</field>
+        <field name="is_teacher">True</field>
+        <field name="subject_ids" eval="[(6,0,[ref('lesson_math')])]"/>
+    </record>
+</odoo>

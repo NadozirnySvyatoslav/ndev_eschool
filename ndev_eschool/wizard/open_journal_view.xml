@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="open_journal_view_form" model="ir.ui.view">
+        <field name="name">eschool.open_journal.form</field>
+        <field name="model">eschool.open_journal</field>
+        <field name="arch" type="xml">
+            <form string="Open journal">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="journal_id" context="{'default_journal_id':journal_id}"/>
+                            <field name="teacher_id" context="{'default_teacher_id':teacher_id}"/>
+                            <field name="subject_id" context="{'default_subject_id':subject_id}"/>
+                            <field name="date" context="{'default_date':date}"/>
+                        </group>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_open" type="object" string="Open" class="btn-primary" data-hotkey="o"/>
+                    <button string="Discard" special="cancel" data-hotkey="z" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

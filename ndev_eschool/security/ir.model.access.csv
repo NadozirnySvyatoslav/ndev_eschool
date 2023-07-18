@@ -2,6 +2,8 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 ndev_eschool.access_eschool_subject,access_eschool_subject,ndev_eschool.model_eschool_subject,base.group_user,1,1,1,1
 ndev_eschool.access_eschool_subject_teacher,access_eschool_subject_teacher,ndev_eschool.model_eschool_subject_teacher,base.group_user,1,1,1,1
 ndev_eschool.access_eschool_class,access_eschool_class,ndev_eschool.model_eschool_class,base.group_user,1,1,1,1
+ndev_eschool.access_eschool_year,access_eschool_year,ndev_eschool.model_eschool_year,base.group_user,1,1,1,1
 ndev_eschool.access_eschool_journal,access_eschool_journal,ndev_eschool.model_eschool_journal,base.group_user,1,1,1,1
-ndev_eschool.access_eschool_lesson,access_eschool_lesson,ndev_eschool.model_eschool_lesson,base.group_user,1,1,1,1
+ndev_eschool.access_eschool_journal_line,access_eschool_journal_line,ndev_eschool.model_eschool_journal_line,base.group_user,1,1,1,1
 ndev_eschool.access_eschool_schedule,access_eschool_schedule,ndev_eschool.model_eschool_schedule,base.group_user,1,1,1,1
+ndev_eschool.access_eschool_open_journal,access_eschool_open_journal,ndev_eschool.model_eschool_open_journal,base.group_user,1,1,1,1

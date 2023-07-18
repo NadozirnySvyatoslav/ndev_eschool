@@ -4,14 +4,100 @@
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
             <form string="pupil action">
+                <div class="oe_title">
+                    <h1>
+                        <field name="name" attrs="{'readonly':True}"/>
+                        <field name="name" attrs="{'invisible':True}"/>
+                    </h1>
+                </div>
+                <field name="is_pupil" context="{'default_is_pupil':is_pupil}" attrs="{'invisible':1}"/>
                 <sheet>
+                    <field name="avatar_256" invisible="1"/>
+                    <field name="image_1920" widget='image' class="oe_avatar"
+                           options='{"preview_image": "avatar_256"}'/>
+
                     <group>
                         <group>
-                            <field name="name"/>
+                            <field name="surname"/>
+                            <field name="first_name"/>
+                            <field name="second_name"/>
+                            <field name="birth"/>
+                            <field name="age"/>
+                            <field name="phone"/>
+                            <field name="mobile"/>
+                            <field name="city"/>
+                            <field name="street"/>
+                        </group>
+                        <group>
+                            <field name="class_id"/>
+                            <field name="year_id"/>
+
                         </group>
                     </group>
+
+                    <notebook>
+                        <page string="Parents">
+                            <field name="parent_ids" domain="[('is_parent','=',True)]"
+                                   context="{'default_is_parent':True}">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Notes">
+                            <field name="comment"/>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
+        </field>
+    </record>
+
+    <record id="eschool_pupil_search" model="ir.ui.view">
+        <field name="name">pupil.search</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <search string="Classes">
+                <field name="name"/>
+                <field name="phone"/>
+                <field name="street"/>
+                <field name="class_id"/>
+                <filter name="groupby_class_id" string="Class" context="{'group_by': 'class_id'}"/>
+                <filter name="groupby_year_id" string="Year" context="{'group_by': 'year_id'}"/>
+                <searchpanel>
+                    <field name="class_id" select="multi" enable_counters="1"/>
+                    <field name="year_id" select="multi" enable_counters="1"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="eschool_pupil_kanban_view">
+        <field name="name">Pupils</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile" default_group_by="class_id">
+                <field name="id"/>
+                <field name="name"/>
+                <field name="avatar_256"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_image">
+                                <img t-att-src="kanban_image('res.partner', 'avatar_256', record.id.raw_value)"
+                                     alt="Img"/>
+                            </div>
+                            <div class="oe_kanban_details">
+                                <div>
+                                    <field name="name"/>
+                                </div>
+                                <div>
+                                    <field name="class_id"/>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
         </field>
     </record>
 
@@ -20,16 +106,41 @@
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
             <tree>
+                <field name="class_id"/>
                 <field name="name"/>
+                <field name="birth"/>
+                <field name="age"/>
+                <field name="parent_ids" widget="many2many_tags"/>
             </tree>
         </field>
     </record>
 
     <record id="eschool_pupil_action" model="ir.actions.act_window">
-        <field name="name">pupil</field>
+        <field name="name">Pupils</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">res.partner</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,kanban,form</field>
         <field name="domain">[('is_pupil','=',True)]</field>
+        <field name="context">{'default_is_pupil':True}</field>
+        <field name="search_view_id" ref="eschool_pupil_search"/>
     </record>
+    <record id="eschool_pupil_action_tree" model="ir.actions.act_window.view">
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="eschool_pupil_tree_view"/>
+        <field name="act_window_id" ref="eschool_pupil_action"/>
+        <field name="sequence">1</field>
+    </record>
+    <record id="eschool_pupil_action_kanban" model="ir.actions.act_window.view">
+        <field name="view_mode">kanban</field>
+        <field name="view_id" ref="eschool_pupil_kanban_view"/>
+        <field name="act_window_id" ref="eschool_pupil_action"/>
+        <field name="sequence">2</field>
+    </record>
+    <record id="eschool_pupil_action_form" model="ir.actions.act_window.view">
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="eschool_pupil_form_view"/>
+        <field name="act_window_id" ref="eschool_pupil_action"/>
+        <field name="sequence">3</field>
+    </record>
+
 </odoo>

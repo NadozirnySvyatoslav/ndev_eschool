@@ -1,0 +1,44 @@
+<odoo>
+    <record id="eschool_year_form_view" model="ir.ui.view">
+        <field name="name">year form</field>
+        <field name="model">eschool.year</field>
+        <field name="arch" type="xml">
+            <form string="year action">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Classes">
+                            <field name="class_ids">
+                                <tree>
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="eschool_year_tree_view" model="ir.ui.view">
+        <field name="name">Years</field>
+        <field name="model">eschool.year</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="class_ids" widget="many2many_tags"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="eschool_year_action" model="ir.actions.act_window">
+        <field name="name">Study Years</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">eschool.year</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

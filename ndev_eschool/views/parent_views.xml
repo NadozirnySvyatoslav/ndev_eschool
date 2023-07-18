@@ -4,10 +4,25 @@
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
             <form string="parent action">
+                <div class="oe_title">
+                    <h1>
+                        <field name="name" attrs="{'readonly':True}"/>
+                        <field name="name" attrs="{'invisible':True}"/>
+                    </h1>
+                </div>
+                <field name="is_parent" context="{'default_is_parent':is_parent}" attrs="{'invisible':1}"/>
                 <sheet>
                     <group>
                         <group>
-                            <field name="name"/>
+                            <field name="surname"/>
+                            <field name="first_name"/>
+                            <field name="second_name"/>
+                            <field name="birth"/>
+                            <field name="age"/>
+                            <field name="phone"/>
+                            <field name="mobile"/>
+                            <field name="city"/>
+                            <field name="street"/>
                         </group>
                     </group>
                 </sheet>
@@ -21,15 +36,31 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
+                <field name="phone"/>
+                <field name="pupil_ids" widget="many2many_tags"/>
             </tree>
         </field>
     </record>
 
     <record id="eschool_parent_action" model="ir.actions.act_window">
-        <field name="name">parent</field>
+        <field name="name">Parents</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">res.partner</field>
         <field name="view_mode">tree,form</field>
         <field name="domain">[('is_parent','=',True)]</field>
+        <field name="context">{'default_is_parent':True}</field>
+    </record>
+
+    <record id="eschool_parent_action_tree" model="ir.actions.act_window.view">
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="eschool_parent_tree_view"/>
+        <field name="act_window_id" ref="eschool_parent_action"/>
+        <field name="sequence">1</field>
+    </record>
+    <record id="eschool_parent_action_form" model="ir.actions.act_window.view">
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="eschool_parent_form_view"/>
+        <field name="act_window_id" ref="eschool_parent_action"/>
+        <field name="sequence">3</field>
     </record>
 </odoo>
