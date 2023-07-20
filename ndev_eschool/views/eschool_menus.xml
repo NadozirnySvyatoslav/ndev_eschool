@@ -3,33 +3,40 @@
     <!-- Top menu item -->
     <menuitem name="E-School" id="eschool_menu_root"/>
     <!-- menu categories -->
-    <menuitem name="E-School" id="eschool_eschool_menu" parent="eschool_menu_root"/>
-    <!-- actions -->
-    <menuitem name="Journal" id="eschool_journal" parent="eschool_eschool_menu"
+
+    <menuitem name="Timetable" id="eschool_timetable"
+              sequence="5"
+              parent="eschool_menu_root"
+              action="eschool_timetable_action"/>
+
+    <menuitem name="Journals" id="eschool_journal"
+              sequence="10"
+              parent="eschool_menu_root"
               action="eschool_journal_action"/>
 
-    <menuitem name="Schedule" id="eschool_schedule" parent="eschool_eschool_menu"
-              action="eschool_schedule_action"/>
-
-
-    <menuitem name="Settings" id="eschool_settings_menu" parent="eschool_menu_root">
+    <menuitem name="Settings" id="eschool_settings_menu"
+              sequence="50"
+              parent="eschool_menu_root">
         <menuitem name="Study" id="eschool_study">
-            <menuitem name="Subjects" id="eschool_subject" action="eschool_subject_action"/>
-            <menuitem name="Classes" id="eschool_class" action="eschool_class_action"/>
-            <menuitem name="Years" id="eschool_year" action="eschool_year_action"/>
+            <menuitem name="Subjects" id="eschool_subject"
+                      action="eschool_subject_action"/>
+            <menuitem name="Classes" id="eschool_class"
+                      action="eschool_class_action"/>
+            <menuitem name="Years" id="eschool_year"
+                      action="eschool_year_action"/>
         </menuitem>
 
         <menuitem name="Study" id="eschool_personel">
-            <menuitem name="Teachers" id="eschool_teacher" action="eschool_teacher_action"/>
+            <menuitem name="Teachers" id="eschool_teacher"
+                      action="eschool_teacher_action"/>
         </menuitem>
 
         <menuitem name="Pupils" id="eschool_pupils">
-            <menuitem name="Pupils" id="eschool_pupil" action="eschool_pupil_action"/>
+            <menuitem name="Pupils" id="eschool_pupil"
+                      action="eschool_pupil_action"/>
 
             <menuitem name="Parents" id="eschool_parent"
                       action="eschool_parent_action"/>
         </menuitem>
     </menuitem>
-
-
 </odoo>

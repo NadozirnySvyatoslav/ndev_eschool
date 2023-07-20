@@ -5,7 +5,9 @@ class Parent(models.Model):
     _inherit = 'res.partner'
     _description = 'Parent model'
     is_parent = fields.Boolean()
-    pupil_ids = fields.Many2many(comodel_name="res.partner", relation="parent_pupil_rel", column1='parent_id',
+    pupil_ids = fields.Many2many(comodel_name="res.partner",
+                                 relation="parent_pupil_rel",
+                                 column1='parent_id',
                                  column2='pupil_id')
     relation = fields.Selection(
         selection=[

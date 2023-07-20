@@ -10,7 +10,9 @@
                         <field name="name" attrs="{'invisible':True}"/>
                     </h1>
                 </div>
-                <field name="is_parent" context="{'default_is_parent':is_parent}" attrs="{'invisible':1}"/>
+                <field name="is_parent"
+                       context="{'default_is_parent':is_parent}"
+                       attrs="{'invisible':1}"/>
                 <sheet>
                     <group>
                         <group>

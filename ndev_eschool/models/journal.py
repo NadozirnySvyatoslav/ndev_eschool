@@ -6,8 +6,10 @@ class JournalLine(models.Model):
     _description = 'Journal record model'
 
     date = fields.Date(required=True, readonly=True)
-    subject_id = fields.Many2one(comodel_name="eschool.subject", required=True, readonly=True)
-    pupil_id = fields.Many2one(comodel_name="res.partner", required=True, readonly=True)
+    subject_id = fields.Many2one(comodel_name="eschool.subject", required=True,
+                                 readonly=True)
+    pupil_id = fields.Many2one(comodel_name="res.partner", required=True,
+                               readonly=True)
     state = fields.Selection(selection=[
         ('present', 'Present'),
         ('sick', 'Sick'),
@@ -21,8 +23,10 @@ class JournalLine(models.Model):
         ('2', '2 Bad'),
         ('1', '1 Very bad')
     ])
-    journal_id = fields.Many2one(comodel_name="eschool.journal", required=True, readonly=True)
-    teacher_id = fields.Many2one(comodel_name="hr.employee", required=True, readonly=True)
+    journal_id = fields.Many2one(comodel_name="eschool.journal", required=True,
+                                 readonly=True)
+    teacher_id = fields.Many2one(comodel_name="hr.employee", required=True,
+                                 readonly=True)
 
 
 class Journal(models.Model):
@@ -33,8 +37,10 @@ class Journal(models.Model):
     year = fields.Integer(required=True)
 
     class_id = fields.Many2one(comodel_name="eschool.class", required=True)
-    line_ids = fields.One2many(comodel_name="eschool.journal.line", inverse_name="journal_id")
-    pupil_ids = fields.One2many(comodel_name="res.partner", inverse_name="class_id", compute="_get_pupils")
+    line_ids = fields.One2many(comodel_name="eschool.journal.line",
+                               inverse_name="journal_id")
+    pupil_ids = fields.One2many(comodel_name="res.partner",
+                                inverse_name="class_id", compute="_get_pupils")
 
     def _get_pupils(self):
         for record in self:

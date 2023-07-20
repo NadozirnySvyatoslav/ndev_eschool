@@ -6,7 +6,9 @@
             <form string="journal action">
 
                 <header>
-                    <button type="object" string="Open journal" name="action_open" context="{'default_journal_id':id}"/>
+                    <button type="object" string="Open journal"
+                            name="action_open"
+                            context="{'default_journal_id':id}"/>
                 </header>
 
                 <sheet>
@@ -37,7 +39,8 @@
         <field name="name">Journals</field>
         <field name="model">eschool.journal.line</field>
         <field name="arch" type="xml">
-            <tree create="0" multi_edit="1" editable="top" default_order="pupil_id" delete="0"
+            <tree create="0" multi_edit="1" editable="top"
+                  default_order="pupil_id" delete="0"
                   decoration-muted="state == 'not_present'"
                   decoration-success="score == '5'"
                   decoration-info="score == '4'"

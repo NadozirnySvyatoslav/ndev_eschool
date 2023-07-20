@@ -32,13 +32,22 @@
         'demo/subjects_data.xml',
         'demo/year_data.xml',
         'demo/class_data.xml',
-        'demo/pupil_data.xml',
-        'demo/parent_data.xml',
-        'demo/teacher_data.xml',
+        # 'demo/pupil_data.xml',
+        # 'demo/parent_data.xml',
+        # 'demo/teacher_data.xml',
     ],
+    'assets': {
+        'web.assets_backend': [
+            'ndev_eschool/static/src/js/kanban_one2many_names.js',
+            'ndev_eschool/static/src/xml/kanban_one2many_names.xml',
+            'ndev_eschool/static/src/xml/timetable_lines.xml',
+        ],
+    },
     'images': ['static/description/banner.png'],
     'application': True,
     'installable': True,
     'auto_install': True,
-    'license': 'LGPL-3'
+    'license': 'LGPL-3',
+    'price': 9.99,
+    'currency': 'EUR'
 }

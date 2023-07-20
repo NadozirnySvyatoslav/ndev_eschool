@@ -8,16 +8,25 @@
                 <sheet>
                     <group>
                         <group>
-                            <field name="journal_id" context="{'default_journal_id':journal_id}"/>
-                            <field name="teacher_id" context="{'default_teacher_id':teacher_id}"/>
-                            <field name="subject_id" context="{'default_subject_id':subject_id}"/>
-                            <field name="date" context="{'default_date':date}"/>
+                            <field name="journal_id"
+                                   context="{'default_journal_id':journal_id}"
+                            />
+                            <field name="teacher_id"
+                                   context="{'default_teacher_id':teacher_id}"
+                            />
+                            <field name="subject_id"
+                                   context="{'default_subject_id':subject_id}"
+                            />
+                            <field name="date"
+                                   context="{'default_date':date}"/>
                         </group>
                     </group>
                 </sheet>
                 <footer>
-                    <button name="action_open" type="object" string="Open" class="btn-primary" data-hotkey="o"/>
-                    <button string="Discard" special="cancel" data-hotkey="z" class="btn-secondary"/>
+                    <button name="action_open" type="object" string="Open"
+                            class="btn-primary" data-hotkey="o"/>
+                    <button string="Discard" special="cancel" data-hotkey="z"
+                            class="btn-secondary"/>
                 </footer>
             </form>
         </field>

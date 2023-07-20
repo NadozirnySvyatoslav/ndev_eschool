@@ -6,4 +6,6 @@ ndev_eschool.access_eschool_year,access_eschool_year,ndev_eschool.model_eschool_
 ndev_eschool.access_eschool_journal,access_eschool_journal,ndev_eschool.model_eschool_journal,base.group_user,1,1,1,1
 ndev_eschool.access_eschool_journal_line,access_eschool_journal_line,ndev_eschool.model_eschool_journal_line,base.group_user,1,1,1,1
 ndev_eschool.access_eschool_schedule,access_eschool_schedule,ndev_eschool.model_eschool_schedule,base.group_user,1,1,1,1
+ndev_eschool.access_eschool_timetable,access_eschool_timetable,ndev_eschool.model_eschool_timetable,base.group_user,1,1,1,1
+ndev_eschool.access_eschool_timetable_line,access_eschool_timetable_line,ndev_eschool.model_eschool_timetable_line,base.group_user,1,1,1,1
 ndev_eschool.access_eschool_open_journal,access_eschool_open_journal,ndev_eschool.model_eschool_open_journal,base.group_user,1,1,1,1

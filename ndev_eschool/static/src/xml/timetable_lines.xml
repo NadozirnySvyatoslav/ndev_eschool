@@ -1,0 +1,24 @@
+<templates>
+    <t t-name="TimetableLines" owl="1">
+            <table width="100%" padding="8px">
+                <tbody>
+                    <t t-foreach="items" t-as="record" t-key="record.id">
+                        <tr>
+                            <td style="padding:8px; vertical-align: baseline;">
+                                <t t-esc="record.order"/>
+                            </td>
+                            <td style="padding:8px">
+                                <div>
+                                    <t t-esc="record.subject_id[1]"/>
+                                </div>
+                                <small align="right">
+                                    <t t-esc="record.teacher_id[1]"/>
+                                </small>
+                            </td>
+                        </tr>
+
+                    </t>
+                </tbody>
+            </table>
+    </t>
+</templates>

@@ -1,0 +1,12 @@
+<templates>
+    <t t-name="KanbanOne2ManyNamesField" owl="1">
+        <div>
+            <t t-foreach="items" t-as="record" t-key="record.id">
+                <p>
+                    <t t-esc="record.name"/>
+                </p>
+
+            </t>
+        </div>
+    </t>
+</templates>

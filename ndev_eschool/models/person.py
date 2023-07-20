@@ -20,9 +20,9 @@ class Person(models.Model):
     @api.onchange('first_name', 'second_name', 'surname')
     def _on_change_name(self):
         for record in self:
-            record.name = (f"{record.surname if record.surname else 'Noname'}"
-                           f" {record.first_name if record.first_name else ''}"
-                           f" {record.second_name if record.second_name else ''}"
+            record.name = (f"{record.surname if record.surname else 'Noname'} "
+                           f"{record.first_name if record.first_name else ''} "
+                           f"{record.second_name if record.second_name else''}"
                            ).strip()
 
     @api.depends('birth')

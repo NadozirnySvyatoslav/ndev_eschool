@@ -7,9 +7,12 @@ class Pupil(models.Model):
 
     class_id = fields.Many2one(comodel_name="eschool.class", store=True)
     is_pupil = fields.Boolean()
-    parent_ids = fields.Many2many(comodel_name="res.partner", relation="parent_pupil_rel", column1="pupil_id",
+    parent_ids = fields.Many2many(comodel_name="res.partner",
+                                  relation="parent_pupil_rel",
+                                  column1="pupil_id",
                                   column2="parent_id")
-    year_id = fields.Many2one(comodel_name="eschool.year", compute="_compute_year", store=True)
+    year_id = fields.Many2one(comodel_name="eschool.year",
+                              compute="_compute_year", store=True)
 
     @api.depends('class_id')
     def _compute_year(self):

@@ -9,7 +9,8 @@
                         <group>
                             <field name="name"/>
                             <field name="year_id"/>
-                            <field name="curator_id" domain="[('is_teacher','=',True)]"/>
+                            <field name="curator_id"
+                                   domain="[('is_teacher','=',True)]"/>
                         </group>
                     </group>
                     <notebook>
@@ -19,7 +20,8 @@
                                     <field name="name"/>
                                     <field name="birth"/>
                                     <field name="age"/>
-                                    <field name="parent_ids" widget="many2many_tags"/>
+                                    <field name="parent_ids"
+                                           widget="many2many_tags"/>
                                 </tree>
                             </field>
                         </page>

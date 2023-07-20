@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo noupdate="1">
     <record id="pupil_1" model="res.partner">
         <field name="name">Петренко Сергій Васильович</field>
         <field name="first_name">Сергій</field>
@@ -8,7 +8,8 @@
         <field name="birth">2011-03-24</field>
         <field name="class_id" ref="class_1a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_1.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_1.png"
+               type="base64"/>
     </record>
 
     <record id="pupil_2" model="res.partner">
@@ -19,7 +20,8 @@
         <field name="birth">2011-05-10</field>
         <field name="class_id" ref="class_1a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_2.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_2.png"
+               type="base64"/>
     </record>
 
     <record id="pupil_3" model="res.partner">
@@ -30,7 +32,8 @@
         <field name="birth">2011-07-02</field>
         <field name="class_id" ref="class_1a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_3.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_3.png"
+               type="base64"/>
     </record>
 
     <record id="pupil_4" model="res.partner">
@@ -41,7 +44,8 @@
         <field name="birth">2011-09-18</field>
         <field name="class_id" ref="class_1a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_4.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_4.png"
+               type="base64"/>
     </record>
 
     <record id="pupil_5" model="res.partner">
@@ -53,7 +57,8 @@
         <field name="class_id" ref="class_1a"/>
 
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_5.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_5.png"
+               type="base64"/>
     </record>
 
     <record id="pupil_6" model="res.partner">
@@ -65,7 +70,8 @@
         <field name="class_id" ref="class_1a"/>
         <field name="is_pupil">True</field>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_6.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_6.png"
+               type="base64"/>
     </record>
 
     <record id="pupil_7" model="res.partner">
@@ -77,7 +83,8 @@
         <field name="class_id" ref="class_1b"/>
         <field name="is_pupil">True</field>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_7.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_7.png"
+               type="base64"/>
     </record>
     <record id="pupil_8" model="res.partner">
         <field name="name">Мельник Юлія Миколаївна</field>
@@ -87,7 +94,8 @@
         <field name="birth">2011-05-21</field>
         <field name="class_id" ref="class_1b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_8.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_8.png"
+               type="base64"/>
     </record>
     <record id="pupil_9" model="res.partner">
         <field name="name">Григоренко Максим Володимирович</field>
@@ -97,7 +105,8 @@
         <field name="birth">2011-08-11</field>
         <field name="class_id" ref="class_1b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_9.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_9.png"
+               type="base64"/>
     </record>
     <record id="pupil_10" model="res.partner">
         <field name="name">Кравченко Анастасія Сергіївна</field>
@@ -107,7 +116,8 @@
         <field name="birth">2011-10-04</field>
         <field name="class_id" ref="class_1b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_10.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_10.png"
+               type="base64"/>
     </record>
     <record id="pupil_11" model="res.partner">
         <field name="name">Павлюченко Дмитро Олександрович</field>
@@ -117,7 +127,8 @@
         <field name="birth">2012-01-23</field>
         <field name="class_id" ref="class_1b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_11.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_11.png"
+               type="base64"/>
     </record>
     <record id="pupil_12" model="res.partner">
         <field name="name">Ткаченко Анна Василівна</field>
@@ -127,7 +138,8 @@
         <field name="birth">2012-04-14</field>
         <field name="class_id" ref="class_1b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_12.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_12.png"
+               type="base64"/>
     </record>
     <record id="pupil_13" model="res.partner">
         <field name="name">Гончаренко Іван Миколайович</field>
@@ -137,7 +149,8 @@
         <field name="birth">2011-01-10</field>
         <field name="class_id" ref="class_1c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_13.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_13.png"
+               type="base64"/>
     </record>
     <record id="pupil_14" model="res.partner">
         <field name="name">Панасенко Марія Олексіївна</field>
@@ -147,7 +160,8 @@
         <field name="birth">2011-04-09</field>
         <field name="class_id" ref="class_1c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_14.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_14.png"
+               type="base64"/>
     </record>
     <record id="pupil_15" model="res.partner">
         <field name="name">Сідоров Віталій Ігорович</field>
@@ -157,7 +171,8 @@
         <field name="birth">2011-07-07</field>
         <field name="class_id" ref="class_1c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_15.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_15.png"
+               type="base64"/>
     </record>
     <record id="pupil_16" model="res.partner">
         <field name="name">Михайленко Софія Валеріївна</field>
@@ -167,7 +182,8 @@
         <field name="birth">2011-10-02</field>
         <field name="class_id" ref="class_1c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_16.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_16.png"
+               type="base64"/>
     </record>
     <record id="pupil_17" model="res.partner">
         <field name="name">Король Євген Олександрович</field>
@@ -177,7 +193,8 @@
         <field name="birth">2012-01-19</field>
         <field name="class_id" ref="class_1c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_17.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_17.png"
+               type="base64"/>
     </record>
     <record id="pupil_18" model="res.partner">
         <field name="name">Полякова Дар'я Олегівна</field>
@@ -187,7 +204,8 @@
         <field name="birth">2012-03-31</field>
         <field name="class_id" ref="class_1c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_18.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_18.png"
+               type="base64"/>
     </record>
     <record id="pupil_19" model="res.partner">
         <field name="name">Федоренко Віктор Володимирович</field>
@@ -197,7 +215,8 @@
         <field name="birth">2010-12-02</field>
         <field name="class_id" ref="class_2a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_19.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_19.png"
+               type="base64"/>
     </record>
     <record id="pupil_20" model="res.partner">
         <field name="name">Марченко Олена Євгеніївна</field>
@@ -207,7 +226,8 @@
         <field name="birth">2010-03-14</field>
         <field name="class_id" ref="class_2a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_20.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_20.png"
+               type="base64"/>
     </record>
     <record id="pupil_21" model="res.partner">
         <field name="name">Шевченко Артем Віталійович</field>
@@ -217,7 +237,8 @@
         <field name="birth">2010-06-21</field>
         <field name="class_id" ref="class_2a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_21.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_21.png"
+               type="base64"/>
     </record>
     <record id="pupil_22" model="res.partner">
         <field name="name">Козлова Лілія Олександрівна</field>
@@ -227,7 +248,8 @@
         <field name="birth">2010-09-13</field>
         <field name="class_id" ref="class_2a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_22.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_22.png"
+               type="base64"/>
     </record>
     <record id="pupil_23" model="res.partner">
         <field name="name">Петренко Дмитро Вадимович</field>
@@ -237,7 +259,8 @@
         <field name="birth">2011-01-26</field>
         <field name="class_id" ref="class_2a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_23.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_23.png"
+               type="base64"/>
     </record>
     <record id="pupil_24" model="res.partner">
         <field name="name">Коваленко Юлія Валеріївна</field>
@@ -247,7 +270,8 @@
         <field name="birth">2011-04-19</field>
         <field name="class_id" ref="class_2a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_24.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_24.png"
+               type="base64"/>
     </record>
     <record id="pupil_25" model="res.partner">
         <field name="name">Сидоренко Олександр Миколайович</field>
@@ -257,7 +281,8 @@
         <field name="birth">2010-11-05</field>
         <field name="class_id" ref="class_2b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_25.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_25.png"
+               type="base64"/>
     </record>
     <record id="pupil_26" model="res.partner">
         <field name="name">Ігнатенко Аліна Олександрівна</field>
@@ -267,7 +292,8 @@
         <field name="birth">2011-02-28</field>
         <field name="class_id" ref="class_2b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_26.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_26.png"
+               type="base64"/>
     </record>
     <record id="pupil_27" model="res.partner">
         <field name="name">Козаченко Андрій Віталійович</field>
@@ -277,7 +303,8 @@
         <field name="birth">2011-06-11</field>
         <field name="class_id" ref="class_2b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_27.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_27.png"
+               type="base64"/>
     </record>
     <record id="pupil_28" model="res.partner">
         <field name="name">Гринько Вікторія Олегівна</field>
@@ -287,7 +314,8 @@
         <field name="birth">2011-09-26</field>
         <field name="class_id" ref="class_2b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_28.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_28.png"
+               type="base64"/>
     </record>
     <record id="pupil_29" model="res.partner">
         <field name="name">Карпенко Дмитро Вікторович</field>
@@ -297,7 +325,8 @@
         <field name="birth">2011-01-07</field>
         <field name="class_id" ref="class_2b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_29.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_29.png"
+               type="base64"/>
     </record>
     <record id="pupil_30" model="res.partner">
         <field name="name">Лисенко Олена Володимирівна</field>
@@ -307,7 +336,8 @@
         <field name="birth">2011-04-01</field>
         <field name="class_id" ref="class_2b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_30.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_30.png"
+               type="base64"/>
     </record>
     <record id="pupil_31" model="res.partner">
         <field name="name">Жуков Михайло Олександрович</field>
@@ -317,7 +347,8 @@
         <field name="birth">2010-10-14</field>
         <field name="class_id" ref="class_2c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_31.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_31.png"
+               type="base64"/>
     </record>
     <record id="pupil_32" model="res.partner">
         <field name="name">Ковальчук Анна Максимівна</field>
@@ -327,7 +358,8 @@
         <field name="birth">2011-03-09</field>
         <field name="class_id" ref="class_2c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_32.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_32.png"
+               type="base64"/>
     </record>
     <record id="pupil_33" model="res.partner">
         <field name="name">Лебедєва Вікторія Віталіївна</field>
@@ -337,7 +369,8 @@
         <field name="birth">2011-06-08</field>
         <field name="class_id" ref="class_2c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_33.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_33.png"
+               type="base64"/>
     </record>
     <record id="pupil_34" model="res.partner">
         <field name="name">Поліщук Олександр Сергійович</field>
@@ -347,7 +380,8 @@
         <field name="birth">2011-09-25</field>
         <field name="class_id" ref="class_2c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_34.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_34.png"
+               type="base64"/>
     </record>
     <record id="pupil_35" model="res.partner">
         <field name="name">Крупська Єлизавета Олегівна</field>
@@ -357,7 +391,8 @@
         <field name="birth">2012-02-17</field>
         <field name="class_id" ref="class_2c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_35.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_35.png"
+               type="base64"/>
     </record>
     <record id="pupil_36" model="res.partner">
         <field name="name">Олійник Ірина Андріївна</field>
@@ -367,7 +402,8 @@
         <field name="birth">2012-05-11</field>
         <field name="class_id" ref="class_2c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_36.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_36.png"
+               type="base64"/>
     </record>
     <record id="pupil_37" model="res.partner">
         <field name="name">Пономаренко Данило Олексійович</field>
@@ -377,7 +413,8 @@
         <field name="birth">2010-09-01</field>
         <field name="class_id" ref="class_3a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_37.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_37.png"
+               type="base64"/>
     </record>
     <record id="pupil_38" model="res.partner">
         <field name="name">Морозова Анастасія Сергіївна</field>
@@ -387,7 +424,8 @@
         <field name="birth">2010-12-11</field>
         <field name="class_id" ref="class_3a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_38.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_38.png"
+               type="base64"/>
     </record>
     <record id="pupil_39" model="res.partner">
         <field name="name">Козир Олександр Васильович</field>
@@ -397,7 +435,8 @@
         <field name="birth">2011-03-13</field>
         <field name="class_id" ref="class_3a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_39.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_39.png"
+               type="base64"/>
     </record>
     <record id="pupil_40" model="res.partner">
         <field name="name">Петренко Єлизавета Максимівна</field>
@@ -407,7 +446,8 @@
         <field name="birth">2011-06-15</field>
         <field name="class_id" ref="class_3a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_40.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_40.png"
+               type="base64"/>
     </record>
     <record id="pupil_41" model="res.partner">
         <field name="name">Кравченко Михайло Сергійович</field>
@@ -417,7 +457,8 @@
         <field name="birth">2011-09-27</field>
         <field name="class_id" ref="class_3a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_41.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_41.png"
+               type="base64"/>
     </record>
     <record id="pupil_42" model="res.partner">
         <field name="name">Тимошенко Катерина Олегівна</field>
@@ -427,7 +468,8 @@
         <field name="birth">2012-01-09</field>
         <field name="class_id" ref="class_3a"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_42.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_42.png"
+               type="base64"/>
     </record>
     <record id="pupil_43" model="res.partner">
         <field name="name">Гриценко Владислав Євгенійович</field>
@@ -437,7 +479,8 @@
         <field name="birth">2010-11-20</field>
         <field name="class_id" ref="class_3b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_43.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_43.png"
+               type="base64"/>
     </record>
     <record id="pupil_44" model="res.partner">
         <field name="name">Коваленко Марина Олегівна</field>
@@ -447,7 +490,8 @@
         <field name="birth">2010-02-16</field>
         <field name="class_id" ref="class_3b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_44.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_44.png"
+               type="base64"/>
     </record>
     <record id="pupil_45" model="res.partner">
         <field name="name">Сергеєва Ольга Вікторівна</field>
@@ -457,7 +501,8 @@
         <field name="birth">2011-05-15</field>
         <field name="class_id" ref="class_3b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_45.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_45.png"
+               type="base64"/>
     </record>
     <record id="pupil_46" model="res.partner">
         <field name="name">Мельник Денис Олексійович</field>
@@ -467,7 +512,8 @@
         <field name="birth">2011-08-08</field>
         <field name="class_id" ref="class_3b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_46.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_46.png"
+               type="base64"/>
     </record>
     <record id="pupil_47" model="res.partner">
         <field name="name">Кравченко Софія Володимирівна</field>
@@ -477,7 +523,8 @@
         <field name="birth">2012-01-27</field>
         <field name="class_id" ref="class_3b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_47.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_47.png"
+               type="base64"/>
     </record>
     <record id="pupil_48" model="res.partner">
         <field name="name">Ткачук Ірина Андріївна</field>
@@ -487,7 +534,8 @@
         <field name="birth">2012-05-26</field>
         <field name="class_id" ref="class_3b"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_48.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_48.png"
+               type="base64"/>
     </record>
     <record id="pupil_49" model="res.partner">
         <field name="name">Колісник Данило Євгенович</field>
@@ -497,7 +545,8 @@
         <field name="birth">2010-10-30</field>
         <field name="class_id" ref="class_3c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_49.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_49.png"
+               type="base64"/>
     </record>
     <record id="pupil_50" model="res.partner">
         <field name="name">Бондаренко Єлизавета Олегівна</field>
@@ -507,7 +556,8 @@
         <field name="birth">2010-12-26</field>
         <field name="class_id" ref="class_3c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_50.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_50.png"
+               type="base64"/>
     </record>
     <record id="pupil_51" model="res.partner">
         <field name="name">Гаврилюк Владислав Сергійович</field>
@@ -517,7 +567,8 @@
         <field name="birth">2011-03-27</field>
         <field name="class_id" ref="class_3c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_51.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_51.png"
+               type="base64"/>
     </record>
     <record id="pupil_52" model="res.partner">
         <field name="name">Мельничук Катерина Віталіївна</field>
@@ -527,7 +578,8 @@
         <field name="birth">2011-06-24</field>
         <field name="class_id" ref="class_3c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_52.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_52.png"
+               type="base64"/>
     </record>
     <record id="pupil_53" model="res.partner">
         <field name="name">Костенко Максим Сергійович</field>
@@ -537,7 +589,8 @@
         <field name="birth">2012-01-30</field>
         <field name="class_id" ref="class_3c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_53.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_53.png"
+               type="base64"/>
     </record>
     <record id="pupil_54" model="res.partner">
         <field name="name">Сидорчук Ірина Андріївна</field>
@@ -547,7 +600,8 @@
         <field name="birth">2012-06-09</field>
         <field name="class_id" ref="class_3c"/>
         <field name="is_pupil">True</field>
-        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_54.png" type="base64"/>
+        <field name="image_1920" file="ndev_eschool/demo/photos/pupil_54.png"
+               type="base64"/>
     </record>
 
 </odoo>

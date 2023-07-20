@@ -1,0 +1,661 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ndev_eschool
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-20 12:14+0000\n"
+"PO-Revision-Date: 2023-07-20 12:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_journal_line__score__1
+msgid "1 Very bad"
+msgstr "1 Дуже погано"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_journal_line__score__2
+msgid "2 Bad"
+msgstr "2 Погано"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_journal_line__score__3
+msgid "3 Not good"
+msgstr "3 Не дуже добре"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_journal_line__score__4
+msgid "4 Good"
+msgstr "4 Добре"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_journal_line__score__5
+msgid "5 Excellent"
+msgstr "5 Відмінно"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_partner__age
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_users__age
+msgid "Age"
+msgstr "Вік"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_partner__birth
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_users__birth
+msgid "Birth"
+msgstr "Дата народження"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal__class_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_schedule__class_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable__class_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_year__class_ids
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_partner__class_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_users__class_id
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_pupil_search
+msgid "Class"
+msgstr "Клас"
+
+#. module: ndev_eschool
+#: model:ir.model,name:ndev_eschool.model_eschool_class
+msgid "Class model"
+msgstr "Модель класу"
+
+#. module: ndev_eschool
+#: model:ir.ui.menu,name:ndev_eschool.eschool_class
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_pupil_search
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_year_form_view
+msgid "Classes"
+msgstr "Класи"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_class__create_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal__create_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal_line__create_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_open_journal__create_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_schedule__create_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject__create_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject_teacher__create_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable__create_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable_line__create_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_year__create_uid
+msgid "Created by"
+msgstr "Створено"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_class__create_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal__create_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal_line__create_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_open_journal__create_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_schedule__create_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject__create_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject_teacher__create_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable__create_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable_line__create_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_year__create_date
+msgid "Created on"
+msgstr "Дата створення"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_class__curator_id
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__res_partner__relation__curator
+msgid "Curator"
+msgstr "Куратор"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal_line__date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_open_journal__date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_schedule__date
+msgid "Date"
+msgstr "Дата"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable__day
+msgid "Day"
+msgstr "День"
+
+#. module: ndev_eschool
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.open_journal_view_form
+msgid "Discard"
+msgstr "Скасувати"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_class__display_name
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal__display_name
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal_line__display_name
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_open_journal__display_name
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_schedule__display_name
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject__display_name
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject_teacher__display_name
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable__display_name
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable_line__display_name
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_year__display_name
+msgid "Display Name"
+msgstr "Назва"
+
+#. module: ndev_eschool
+#: model:ir.ui.menu,name:ndev_eschool.eschool_menu_root
+msgid "E-School"
+msgstr "Е-Школа"
+
+#. module: ndev_eschool
+#: model:ir.module.category,name:ndev_eschool.module_category_school
+msgid "E-school"
+msgstr "Е-Школа"
+
+#. module: ndev_eschool
+#: model:res.groups,name:ndev_eschool.group_school_manager
+msgid "E-school Administrator"
+msgstr "Е-Школа Адміністратор"
+
+#. module: ndev_eschool
+#: model:res.groups,name:ndev_eschool.group_school_parent
+msgid "E-school Parent"
+msgstr "Е-Школа Батьки"
+
+#. module: ndev_eschool
+#: model:res.groups,name:ndev_eschool.group_school_pupil
+msgid "E-school Pupil"
+msgstr "Е-Школа Учень"
+
+#. module: ndev_eschool
+#: model:res.groups,name:ndev_eschool.group_school_teacher
+msgid "E-school Teacher"
+msgstr "Е-Школа Вчитель"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_timetable_line__periodically__even
+msgid "Even week"
+msgstr "Парні тижні"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__res_partner__relation__father
+msgid "Father"
+msgstr "Батько"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__res_partner__gender__female
+msgid "Female"
+msgstr "Мати"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_journal_line__state__fired
+msgid "Fired"
+msgstr "Звільнений"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_partner__first_name
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_users__first_name
+msgid "First Name"
+msgstr "Ім'я"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_timetable__day__fri
+msgid "Friday"
+msgstr "П'ятниця"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_partner__gender
+msgid "Gender"
+msgstr "Стать"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__res_partner__relation__grandfather
+msgid "Grandfather"
+msgstr "Дід"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__res_partner__relation__grandmother
+msgid "Grandmother"
+msgstr "Баба"
+
+#. module: ndev_eschool
+#: model:ir.module.category,description:ndev_eschool.module_category_school
+msgid "Helps you handle your e-school needs"
+msgstr ""
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_class__id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal__id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal_line__id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_open_journal__id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_schedule__id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject__id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject_teacher__id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable__id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable_line__id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_year__id
+msgid "ID"
+msgstr ""
+
+#. module: ndev_eschool
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_pupil_kanban_view
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_teacher_kanban_view
+msgid "Img"
+msgstr ""
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_partner__is_parent
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_users__is_parent
+msgid "Is Parent"
+msgstr "Батьки"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_partner__is_pupil
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_users__is_pupil
+msgid "Is Pupil"
+msgstr "Учень"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_hr_employee__is_teacher
+msgid "Is Teacher"
+msgstr "Вчитель"
+
+#. module: ndev_eschool
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_teacher_form_view
+msgid "Is teacher"
+msgstr "Вчитель"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal_line__journal_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_open_journal__journal_id
+#: model:ir.ui.menu,name:ndev_eschool.eschool_journal
+msgid "Journal"
+msgstr "Журнал"
+
+#. module: ndev_eschool
+#: model:ir.model,name:ndev_eschool.model_eschool_journal
+msgid "Journal model"
+msgstr "Журнал"
+
+#. module: ndev_eschool
+#: model:ir.model,name:ndev_eschool.model_eschool_journal_line
+msgid "Journal record model"
+msgstr ""
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_class____last_update
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal____last_update
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal_line____last_update
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_open_journal____last_update
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_schedule____last_update
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject____last_update
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject_teacher____last_update
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable____last_update
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable_line____last_update
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_year____last_update
+msgid "Last Modified on"
+msgstr "Змінено"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_class__write_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal__write_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal_line__write_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_open_journal__write_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_schedule__write_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject__write_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject_teacher__write_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable__write_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable_line__write_uid
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_year__write_uid
+msgid "Last Updated by"
+msgstr "Оновлено"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_class__write_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal__write_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal_line__write_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_open_journal__write_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_schedule__write_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject__write_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject_teacher__write_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable__write_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable_line__write_date
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_year__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal__line_ids
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable__line_ids
+msgid "Line"
+msgstr "Рядок"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__res_partner__gender__male
+msgid "Male"
+msgstr "Чоловік"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_timetable__day__mon
+msgid "Monday"
+msgstr "Понеділок"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__res_partner__relation__mother
+msgid "Mother"
+msgstr "Мати"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_class__name
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal__name
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject__name
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable_line__name
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_year__name
+msgid "Name"
+msgstr "Назва"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_journal_line__state__not_present
+msgid "Not present"
+msgstr "Відсутній"
+
+#. module: ndev_eschool
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_pupil_form_view
+msgid "Notes"
+msgstr "Примітки"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_timetable_line__periodically__odd
+msgid "Odd week"
+msgstr "Непарні тижні"
+
+#. module: ndev_eschool
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.open_journal_view_form
+msgid "Open"
+msgstr "Відкрити"
+
+#. module: ndev_eschool
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_journal_form_view
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.open_journal_view_form
+msgid "Open journal"
+msgstr "Відкрити журнал"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable_line__order
+msgid "Order"
+msgstr "Номер уроку"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_partner__parent_ids
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_users__parent_ids
+msgid "Parent"
+msgstr "Батьки"
+
+#. module: ndev_eschool
+#: model:ir.actions.act_window,name:ndev_eschool.eschool_parent_action
+#: model:ir.ui.menu,name:ndev_eschool.eschool_parent
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_pupil_form_view
+msgid "Parents"
+msgstr "Батьки"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable_line__periodically
+msgid "Periodically"
+msgstr "Періодичність"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_journal_line__state__present
+msgid "Present"
+msgstr ""
+
+#. module: ndev_eschool
+#: model:ir.model,name:ndev_eschool.model_eschool_open_journal
+msgid "Provide fulfil date, pupils, subject in journal line"
+msgstr ""
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal__pupil_ids
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal_line__pupil_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_partner__pupil_ids
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_users__pupil_ids
+msgid "Pupil"
+msgstr "Учень"
+
+#. module: ndev_eschool
+#: model:ir.model,name:ndev_eschool.model_res_partner
+msgid "Pupil model"
+msgstr "Контакт"
+
+#. module: ndev_eschool
+#: model:ir.actions.act_window,name:ndev_eschool.eschool_pupil_action
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_class__pupil_ids
+#: model:ir.ui.menu,name:ndev_eschool.eschool_pupil
+#: model:ir.ui.menu,name:ndev_eschool.eschool_pupils
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_class_form_view
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_journal_form_view
+msgid "Pupils"
+msgstr "Учні"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_partner__relation
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_users__relation
+msgid "Relation"
+msgstr ""
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_timetable__day__sat
+msgid "Saturday"
+msgstr "Субота"
+
+#. module: ndev_eschool
+#: model:ir.model,name:ndev_eschool.model_eschool_schedule
+msgid "Schedule model"
+msgstr ""
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal_line__score
+msgid "Score"
+msgstr "Оцінка"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_partner__second_name
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_users__second_name
+msgid "Second Name"
+msgstr "По-батькові"
+
+#. module: ndev_eschool
+#: model:ir.ui.menu,name:ndev_eschool.eschool_settings_menu
+msgid "Settings"
+msgstr "Налаштування"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_journal_line__state__sick
+msgid "Sick"
+msgstr "Хворий"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal_line__state
+msgid "State"
+msgstr "Стан"
+
+#. module: ndev_eschool
+#: model:ir.ui.menu,name:ndev_eschool.eschool_personel
+#: model:ir.ui.menu,name:ndev_eschool.eschool_study
+msgid "Study"
+msgstr "Навчання"
+
+#. module: ndev_eschool
+#: model:ir.actions.act_window,name:ndev_eschool.eschool_year_action
+msgid "Study Years"
+msgstr "Роки навчання"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal_line__subject_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_open_journal__subject_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_schedule__subject_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject_teacher__subject_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable_line__subject_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_hr_employee__subject_ids
+msgid "Subject"
+msgstr "Предмет"
+
+#. module: ndev_eschool
+#: model:ir.model,name:ndev_eschool.model_eschool_subject
+msgid "Subject such as math, chemistry, physics"
+msgstr ""
+
+#. module: ndev_eschool
+#: model:ir.actions.act_window,name:ndev_eschool.eschool_subject_action
+#: model:ir.ui.menu,name:ndev_eschool.eschool_subject
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_teacher_form_view
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_teacher_search
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_teacher_tree_view
+msgid "Subjects"
+msgstr "Предмети"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_timetable__day__sun
+msgid "Sunday"
+msgstr "Неділя"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_partner__surname
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_users__surname
+msgid "Surname"
+msgstr "Прізвище"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal_line__teacher_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_open_journal__teacher_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_schedule__teacher_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject__teacher_ids
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_subject_teacher__teacher_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable_line__teacher_id
+msgid "Teacher"
+msgstr "Вчитель"
+
+#. module: ndev_eschool
+#: model:ir.model,name:ndev_eschool.model_hr_employee
+msgid "Teacher model"
+msgstr "Співробітник"
+
+#. module: ndev_eschool
+#: model:ir.model,name:ndev_eschool.model_eschool_subject_teacher
+msgid "Teacher subjects model"
+msgstr ""
+
+#. module: ndev_eschool
+#: model:ir.actions.act_window,name:ndev_eschool.eschool_teacher_action
+#: model:ir.ui.menu,name:ndev_eschool.eschool_teacher
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_subject_form_view
+msgid "Teachers"
+msgstr "Вчителі"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_timetable__day__thu
+msgid "Thursday"
+msgstr "Четвер"
+
+#. module: ndev_eschool
+#: model:ir.actions.act_window,name:ndev_eschool.eschool_timetable_action
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_timetable_line__timetable_id
+#: model:ir.ui.menu,name:ndev_eschool.eschool_timetable
+msgid "Timetable"
+msgstr "Розклад занять"
+
+#. module: ndev_eschool
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_timetable_form_view
+msgid "Timetable form"
+msgstr "Розклад занять"
+
+#. module: ndev_eschool
+#: model:ir.model,name:ndev_eschool.model_eschool_timetable_line
+msgid "Timetable line model"
+msgstr "Розклад занять"
+
+#. module: ndev_eschool
+#: model:ir.model,name:ndev_eschool.model_eschool_timetable
+msgid "Timetable model"
+msgstr ""
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_timetable__day__tue
+msgid "Tuesday"
+msgstr "Вівторок"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_timetable__day__wed
+msgid "Wednesday"
+msgstr "Середа"
+
+#. module: ndev_eschool
+#: model:ir.model.fields.selection,name:ndev_eschool.selection__eschool_timetable_line__periodically__weekly
+msgid "Weekly"
+msgstr "Щотижня"
+
+#. module: ndev_eschool
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_class__year_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_eschool_journal__year
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_partner__year_id
+#: model:ir.model.fields,field_description:ndev_eschool.field_res_users__year_id
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_pupil_search
+msgid "Year"
+msgstr "Рік"
+
+#. module: ndev_eschool
+#: model:ir.model,name:ndev_eschool.model_eschool_year
+msgid "Year model"
+msgstr "Рік"
+
+#. module: ndev_eschool
+#: model:ir.ui.menu,name:ndev_eschool.eschool_year
+msgid "Years"
+msgstr "Роки навчання"
+
+#. module: ndev_eschool
+#: model:ir.actions.act_window,name:ndev_eschool.eschool_class_action
+msgid "class"
+msgstr "Класс"
+
+#. module: ndev_eschool
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_class_form_view
+msgid "class action"
+msgstr "Класс"
+
+#. module: ndev_eschool
+#: model:ir.actions.act_window,name:ndev_eschool.eschool_journal_action
+msgid "journal"
+msgstr "Журнал"
+
+#. module: ndev_eschool
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_journal_form_view
+msgid "journal action"
+msgstr "Журнал"
+
+#. module: ndev_eschool
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_parent_form_view
+msgid "parent action"
+msgstr "Батьки"
+
+#. module: ndev_eschool
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_pupil_form_view
+msgid "pupil action"
+msgstr "Учні"
+
+#. module: ndev_eschool
+#: model:ir.actions.act_window,name:ndev_eschool.eschool_schedule_action
+msgid "schedule"
+msgstr "Графік"
+
+#. module: ndev_eschool
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_schedule_form_view
+msgid "schedule action"
+msgstr "Графік"
+
+#. module: ndev_eschool
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_subject_form_view
+msgid "subject action"
+msgstr "Графік"
+
+#. module: ndev_eschool
+#: model_terms:ir.ui.view,arch_db:ndev_eschool.eschool_year_form_view
+msgid "year action"
+msgstr "Роки"
