@@ -46,6 +46,9 @@
                   decoration-info="score == '4'"
                   decoration-warning="score == '3'"
                   decoration-danger="score == '2' or score=='1'">
+                <field name="date" groups="ndev_eschool.group_school_parent"/>
+                <field name="subject_id" groups="ndev_eschool.group_school_parent"/>
+                <field name="teacher_id" groups="ndev_eschool.group_school_parent"/>
                 <field name="pupil_id"/>
                 <field name="state"/>
                 <field name="score"/>
@@ -90,5 +93,12 @@
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">eschool.journal</field>
         <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <record id="eschool_journal_line_action" model="ir.actions.act_window">
+        <field name="name">Journal lines</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">eschool.journal.line</field>
+        <field name="view_mode">tree</field>
     </record>
 </odoo>

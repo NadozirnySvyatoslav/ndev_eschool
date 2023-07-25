@@ -6,16 +6,25 @@
 
     <menuitem name="Timetable" id="eschool_timetable"
               sequence="5"
+              groups="group_school_teacher"
               parent="eschool_menu_root"
               action="eschool_timetable_action"/>
 
     <menuitem name="Journals" id="eschool_journal"
               sequence="10"
+              groups="group_school_teacher"
               parent="eschool_menu_root"
               action="eschool_journal_action"/>
 
+    <menuitem name="My pupil's journal" id="eschool_mypupils"
+              sequence="10"
+              parent="eschool_menu_root"
+              groups="group_school_parent"
+              action="eschool_journal_line_action"/>
+
     <menuitem name="Settings" id="eschool_settings_menu"
               sequence="50"
+              groups="group_school_teacher"
               parent="eschool_menu_root">
         <menuitem name="Study" id="eschool_study">
             <menuitem name="Subjects" id="eschool_subject"

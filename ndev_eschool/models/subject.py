@@ -2,6 +2,9 @@ from odoo import models, fields
 
 
 class Subject(models.Model):
+    """
+    Class for subjects
+    """
     _name = 'eschool.subject'
     _description = 'Subject such as math, chemistry, physics'
     name = fields.Char()

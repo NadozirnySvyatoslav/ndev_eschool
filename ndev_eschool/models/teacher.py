@@ -1,14 +1,10 @@
 from odoo import models, fields
 
 
-class TeacherSubject(models.Model):
-    _name = 'eschool.subject.teacher'
-    _description = 'Teacher subjects model'
-    subject_id = fields.Many2one(comodel_name="eschool.subject")
-    teacher_id = fields.Many2one(comodel_name="hr.employee")
-
-
 class Teacher(models.Model):
+    """
+    Inherited class for teachers
+    """
     _inherit = 'hr.employee'
     _description = 'Teacher model'
     is_teacher = fields.Boolean()

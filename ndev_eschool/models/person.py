@@ -3,6 +3,9 @@ from odoo import models, fields, api
 
 
 class Person(models.Model):
+    """
+    Basic class with name, age, gender fields for partners
+    """
     _inherit = 'res.partner'
     _description = 'Add names and age to partner model'
 
@@ -22,7 +25,7 @@ class Person(models.Model):
         for record in self:
             record.name = (f"{record.surname if record.surname else 'Noname'} "
                            f"{record.first_name if record.first_name else ''} "
-                           f"{record.second_name if record.second_name else''}"
+                           f"{record.second_name if record.second_name else ''}"
                            ).strip()
 
     @api.depends('birth')

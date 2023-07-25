@@ -19,21 +19,23 @@
         'views/teacher_views.xml',
         'views/pupil_views.xml',
         'views/parent_views.xml',
-        'views/schedule_views.xml',
+        'views/timetable_views.xml',
         'views/subject_views.xml',
         'views/class_views.xml',
         'views/year_views.xml',
         'views/eschool_menus.xml',
 
         'wizard/open_journal_view.xml',
+        'report/assessment.xml',
 
     ],
     'demo': [
         'demo/subjects_data.xml',
         'demo/year_data.xml',
         'demo/class_data.xml',
-        # 'demo/pupil_data.xml',
-        # 'demo/parent_data.xml',
+        'demo/pupil_data.xml',
+        'demo/parent_data.xml',
+        'demo/users_data.xml',
         # 'demo/teacher_data.xml',
     ],
     'assets': {
@@ -43,6 +45,7 @@
             'ndev_eschool/static/src/xml/timetable_lines.xml',
         ],
     },
+
     'images': ['static/description/banner.png'],
     'application': True,
     'installable': True,

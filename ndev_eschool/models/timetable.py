@@ -1,16 +1,10 @@
 from odoo import models, fields, api
 
 
-class Schedule(models.Model):
-    _name = 'eschool.schedule'
-    _description = 'Schedule model'
-    date = fields.Date()
-    class_id = fields.Many2one(comodel_name="eschool.class")
-    subject_id = fields.Many2one(comodel_name="eschool.subject")
-    teacher_id = fields.Many2one(comodel_name="hr.employee", domain=[('is_teacher', '=', True)])
-
-
 class TimetableLine(models.Model):
+    """
+    Class for subjects schedule records as subject and teacher for class
+    """
     _name = 'eschool.timetable.line'
     _description = 'Timetable line model'
     _order = 'order'
@@ -34,6 +28,9 @@ class TimetableLine(models.Model):
 
 
 class Timetable(models.Model):
+    """
+    Class for subjects schedule for each day of week
+    """
     _name = 'eschool.timetable'
     _description = 'Timetable model'
 
@@ -48,4 +45,3 @@ class Timetable(models.Model):
         ('sat', 'Saturday'),
         ('sun', 'Sunday'),
     ], required=True)
-

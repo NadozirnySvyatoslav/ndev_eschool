@@ -2,6 +2,9 @@ from odoo import models, fields
 
 
 class SchoolYear(models.Model):
+    """
+    Class for school class year - for grouping classes
+    """
     _name = 'eschool.year'
     _description = 'Year model'
     name = fields.Char(required=True)
@@ -10,6 +13,9 @@ class SchoolYear(models.Model):
 
 
 class SchoolClass(models.Model):
+    """
+    Class for pupil's classes
+    """
     _name = 'eschool.class'
     _description = 'Class model'
     name = fields.Char(required=True)

@@ -2,6 +2,9 @@ from odoo import models, fields
 
 
 class OpenJournal(models.TransientModel):
+    """
+    Class for open journal at exact day and subject in fullscreen for scoring
+    """
     _name = "eschool.open_journal"
     _description = "Provide fulfil date, pupils, subject in journal line"
 

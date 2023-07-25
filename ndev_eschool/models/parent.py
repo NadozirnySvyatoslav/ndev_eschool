@@ -2,6 +2,9 @@ from odoo import models, fields
 
 
 class Parent(models.Model):
+    """
+    Inherited class for Parents of pupils
+    """
     _inherit = 'res.partner'
     _description = 'Parent model'
     is_parent = fields.Boolean()

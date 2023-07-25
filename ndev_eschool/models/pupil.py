@@ -2,6 +2,9 @@ from odoo import models, fields, api
 
 
 class Pupil(models.Model):
+    """
+    Inherited class for pupils
+    """
     _inherit = 'res.partner'
     _description = 'Pupil model'
 

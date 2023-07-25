@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="assessment_report" model="ir.actions.report">
+        <field name="name">Assessment report</field>
+        <field name="model">eschool.journal</field>
+        <field name="report_type">qweb-html</field>
+        <field name="report_name">ndev_eschool.assessment</field>
+        <field name="report_file">assessment_report</field>
+        <field name="binding_model_id" ref="model_eschool_journal"/>
+        <field name="binding_view_types">form</field>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="ndev_eschool.assessment">
+        <t t-foreach="docs" t-as="object">
+            <div t-call="web.html_container">
+                <t t-call="web.internal_layout">
+                    <div class="page">
+                        <h1>
+                            Class:
+                            <t t-out="object.class_id.name"/>
+                            /
+                            <t t-out="object.year"/>
+                        </h1>
+                        <div>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Pupil</th>
+                                        <th>Date</th>
+                                        <th>Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody t-foreach="object.line_ids" t-as="o">
+                                    <tr>
+                                        <td>
+                                            <t t-esc="o.subject_id.name"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="o.pupil_id.name"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="o.date"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="o.score"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Date created:
+                                <t t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
+                            </p>
+                        </div>
+                    </div>
+                </t>
+            </div>
+        </t>
+    </template>
+</odoo>
