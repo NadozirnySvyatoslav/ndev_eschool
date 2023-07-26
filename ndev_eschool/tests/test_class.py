@@ -1,5 +1,4 @@
 from odoo.tests import SingleTransactionCase
-from odoo.exceptions import UserError
 
 
 class ClassTest(SingleTransactionCase):

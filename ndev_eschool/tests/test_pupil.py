@@ -1,6 +1,5 @@
 from datetime import datetime
 from odoo.tests import SingleTransactionCase
-from odoo.exceptions import UserError
 
 
 class PupilTest(SingleTransactionCase):

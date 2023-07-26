@@ -1,7 +1,5 @@
 from datetime import datetime
 from odoo.tests import SingleTransactionCase
-from odoo.exceptions import UserError
-from odoo.tests.common import Form
 
 
 class JournalTest(SingleTransactionCase):
