@@ -10,8 +10,10 @@ class JournalLine(models.Model):
 
     date = fields.Date(required=True,
                        readonly=True)
-    subject_id = fields.Many2one(comodel_name="eschool.subject", required=True, readonly=True)
-    pupil_id = fields.Many2one(comodel_name="res.partner", required=True, readonly=True)
+    subject_id = fields.Many2one(comodel_name="eschool.subject", required=True,
+                                 readonly=True)
+    pupil_id = fields.Many2one(comodel_name="res.partner", required=True,
+                               readonly=True)
     state = fields.Selection(selection=[
         ('present', 'Present'),
         ('sick', 'Sick'),
@@ -25,8 +27,10 @@ class JournalLine(models.Model):
         ('2', '2 Bad'),
         ('1', '1 Very bad')
     ])
-    journal_id = fields.Many2one(comodel_name="eschool.journal", required=True, readonly=True)
-    teacher_id = fields.Many2one(comodel_name="hr.employee", required=True, readonly=True)
+    journal_id = fields.Many2one(comodel_name="eschool.journal", required=True,
+                                 readonly=True)
+    teacher_id = fields.Many2one(comodel_name="hr.employee", required=True,
+                                 readonly=True)
 
 
 class Journal(models.Model):
@@ -41,8 +45,10 @@ class Journal(models.Model):
     year = fields.Integer(required=True)
 
     class_id = fields.Many2one(comodel_name="eschool.class", required=True)
-    line_ids = fields.One2many(comodel_name="eschool.journal.line", inverse_name="journal_id")
-    pupil_ids = fields.One2many(comodel_name="res.partner", inverse_name="class_id", compute="_get_pupils")
+    line_ids = fields.One2many(comodel_name="eschool.journal.line",
+                               inverse_name="journal_id")
+    pupil_ids = fields.One2many(comodel_name="res.partner",
+                                inverse_name="class_id", compute="_get_pupils")
 
     def _get_pupils(self):
         for record in self:
@@ -55,8 +61,9 @@ class Journal(models.Model):
 
     def action_open(self):
         """
-        Method that defines an action to open a new form view for 'eschool.open_journal',
-        passing the current journal_id as the default_journal_id in the context.
+        Method that defines an action to open a new form view for
+        'eschool.open_journal', passing the current journal_id as the
+        default_journal_id in the context.
         """
         view_id = self.env.ref('ndev_eschool.open_journal_view_form').id
         return {

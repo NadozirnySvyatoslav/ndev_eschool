@@ -13,8 +13,11 @@ class TimetableLine(models.Model):
     order = fields.Integer(required=True)
 
     subject_id = fields.Many2one(comodel_name="eschool.subject", required=True)
-    teacher_id = fields.Many2one(comodel_name="hr.employee", domain=[('is_teacher', '=', True)], required=True)
-    timetable_id = fields.Many2one(comodel_name="eschool.timetable", required=True)
+    teacher_id = fields.Many2one(comodel_name="hr.employee",
+                                 domain=[('is_teacher', '=', True)],
+                                 required=True)
+    timetable_id = fields.Many2one(comodel_name="eschool.timetable",
+                                   required=True)
     periodically = fields.Selection(selection=[
         ('weekly', 'Weekly'),
         ('odd', 'Odd week'),
@@ -34,7 +37,8 @@ class Timetable(models.Model):
     _name = 'eschool.timetable'
     _description = 'Timetable model'
 
-    line_ids = fields.One2many(comodel_name="eschool.timetable.line", inverse_name="timetable_id")
+    line_ids = fields.One2many(comodel_name="eschool.timetable.line",
+                               inverse_name="timetable_id")
     class_id = fields.Many2one(comodel_name="eschool.class", required=True)
     day = fields.Selection(selection=[
         ('mon', 'Monday'),

@@ -22,11 +22,11 @@ class Person(models.Model):
 
     @api.onchange('first_name', 'second_name', 'surname')
     def _on_change_name(self):
-        for record in self:
-            record.name = (f"{record.surname if record.surname else 'Noname'} "
-                           f"{record.first_name if record.first_name else ''} "
-                           f"{record.second_name if record.second_name else ''}"
-                           ).strip()
+        for r in self:
+            r.name = (f"{r.surname if r.surname else 'Noname'} "
+                      f"{r.first_name if r.first_name else ''} "
+                      f"{r.second_name if r.second_name else ''}"
+                      ).strip()
 
     @api.depends('birth')
     def _compute_age(self):
